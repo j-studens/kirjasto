@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="palautaKirjaNakyma" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="601.0" style="-fx-background-color: #4fb86b;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PalautusController">
+   <children>
+      <Button fx:id="palautaKirja" layoutX="78.0" layoutY="197.0" mnemonicParsing="false" onAction="#palautaKirja" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #96e3ab;" text="Palauta" />
+      <Label alignment="CENTER" layoutX="162.0" layoutY="26.0" prefHeight="81.0" prefWidth="277.0" text="Palauta Kirja">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="36.0" layoutY="142.0" />
+      <Button fx:id="peruuta" layoutX="308.0" layoutY="197.0" mnemonicParsing="false" onAction="#peruuta" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #96e3ab;" text="Peruuta" />
+      <Label layoutX="74.0" layoutY="121.0" text="(Nimi, tekijä, ISBN)" />
+      <ListView fx:id="kirjaTieto" layoutX="74.0" layoutY="138.0" prefHeight="47.0" prefWidth="457.0" style="-fx-background-color: #c2f0ce; -fx-border-color: black;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="lisaaKirjaNakyma" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="601.0" style="-fx-background-color: #4fb86b;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LisaysController">
+   <children>
+      <Label alignment="CENTER" layoutX="197.0" layoutY="47.0" prefHeight="81.0" prefWidth="216.0" text="Lisää Kirja">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="50.0" layoutY="128.0" />
+      <TextField fx:id="lisaaTekija" layoutX="234.0" layoutY="128.0" prefHeight="40.0" prefWidth="159.0" promptText="Tekijä" />
+      <TextField fx:id="lisaaIsbn" layoutX="393.0" layoutY="128.0" prefHeight="40.0" prefWidth="159.0" promptText="ISBN-tunniste" />
+      <TextField fx:id="lisaaNimi" layoutX="75.0" layoutY="128.0" prefHeight="40.0" prefWidth="159.0" promptText="Nimi" />
+       <Button fx:id="tallennaKirja" layoutX="92.0" layoutY="183.0" mnemonicParsing="false" onAction="#lisaaKirja" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #96e3ab;" text="Tallenna" />
+      <Button fx:id="peruuta" layoutX="322.0" layoutY="183.0" mnemonicParsing="false" onAction="#peruuta" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #96e3ab;" text="Peruuta" />
+   </children>
+</AnchorPane>
