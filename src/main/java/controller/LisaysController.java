@@ -45,25 +45,14 @@ public class LisaysController {
         /// Tarkistaa sen, että kaikki kentät ovat täytetty
         if (nimi == null || nimi.trim().isEmpty() || tekija == null || tekija.trim().isEmpty() || isbn == null || isbn.trim().isEmpty()) {
 
-            /// Varsinainen ponnahusikkuna
-            Alert virheilmoitus1 = new Alert(Alert.AlertType.WARNING);
-            virheilmoitus1.setTitle("Virhe");
-            virheilmoitus1.setHeaderText(null);
-            virheilmoitus1.setContentText("Täytä kaikki kentät!");
-            virheilmoitus1.showAndWait();
-
+            Paneelit.naytaVaroitus("Virhe", "Täytä kaikki kentät");
             return;
         }
 
         /// Tarkistaa onko ISBN-tunnisteessa 13 numeroa
         if (isbn.trim().length() != 13) {
 
-            Alert virheilmoitus2 = new Alert(Alert.AlertType.WARNING);
-            virheilmoitus2.setTitle("Virhe");
-            virheilmoitus2.setHeaderText(null);
-            virheilmoitus2.setContentText("ISBN-tunnisteen täytyy olla 13 numeroa pitkä!");
-            virheilmoitus2.showAndWait();
-
+            Paneelit.naytaVaroitus("Virhe", "ISBN-tunnisteen täytyy olla 13 numeroa pitkä");
             return;
         }
 
@@ -79,6 +68,7 @@ public class LisaysController {
          */
         @FXML
         private void peruuta() {
+
             Paneelit.vaihdaPaneeli("kirjastoPaneeli.fxml");
         }
 

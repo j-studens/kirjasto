@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -14,7 +15,7 @@
             <Font size="41.0" />
          </font>
       </Label>
-      <ListView fx:id="kirjaTieto" layoutX="42.0" layoutY="64.0" prefHeight="47.0" prefWidth="518.0" style="-fx-background-color: #c2f0ce; -fx-border-color: black;" />
+      <ListView fx:id="kirjaTieto" layoutX="42.0" layoutY="64.0" prefHeight="25.0" prefWidth="518.0" style="-fx-background-color: #c2f0ce; -fx-border-color: black;" />
       <ListView fx:id="lainaTilanne" layoutX="131.0" layoutY="123.0" prefHeight="47.0" prefWidth="424.0" style="-fx-background-color: #c2f0ce; -fx-border-color: black;" />
       <ListView fx:id="palautusPaiva" layoutX="131.0" layoutY="170.0" prefHeight="47.0" prefWidth="424.0" style="-fx-background-color: #c2f0ce; -fx-border-color: black;" />
       <ListView fx:id="lainauksia" layoutX="131.0" layoutY="217.0" prefHeight="47.0" prefWidth="424.0" style="-fx-background-color: #c2f0ce; -fx-border-color: black;" />
@@ -23,11 +24,15 @@
       <Label alignment="CENTER" layoutX="48.0" layoutY="123.0" prefHeight="47.0" prefWidth="87.0" style="-fx-background-color: #c2f0ce; -fx-border-color: black;" text="Lainatilanne" />
       <ListView fx:id="lainausHistoria" layoutX="42.0" layoutY="334.0" prefHeight="72.0" prefWidth="518.0" style="-fx-background-color: #c2f0ce; -fx-border-color: black;" />
       <Label layoutX="42.0" layoutY="317.0" text="(Lainaaja, lainauspäivä, palautuspäivä)" />
-      <Label alignment="CENTER" layoutX="158.0" layoutY="254.0" prefHeight="72.0" prefWidth="285.0" text="Lainaushistoria">
+      <Label alignment="CENTER" layoutX="159.0" layoutY="264.0" prefHeight="72.0" prefWidth="285.0" text="Lainaushistoria">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <Button fx:id="peruuta" layoutX="190.0" layoutY="429.0" mnemonicParsing="false" onAction="#peruuta" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #96e3ab;" text="Peruuta" />
+      <Button fx:id="peruuta" layoutX="189.0" layoutY="420.0" mnemonicParsing="false" onAction="#peruuta" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #96e3ab;" text="Peruuta" />
+      <TextField fx:id="uusiNimi" layoutX="42.0" layoutY="89.0" prefHeight="25.0" prefWidth="130.0" promptText="Muokkaa nimi" />
+      <TextField fx:id="uusiTekija" layoutX="172.0" layoutY="89.0" prefHeight="25.0" prefWidth="130.0" promptText="Muokkaa tekijä" />
+      <TextField fx:id="uusiISBN" layoutX="300.0" layoutY="89.0" prefHeight="25.0" prefWidth="143.0" promptText="Muokkaa ISBN" />
+      <Button fx:id="tallennaKirja" layoutX="442.0" layoutY="89.0" mnemonicParsing="false" onAction="#tallennaMuutos" prefHeight="17.0" prefWidth="117.0" style="-fx-background-color: #96e3ab;" text="Tallenna" />
    </children>
 </AnchorPane>

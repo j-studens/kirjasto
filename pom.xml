@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fi.jyu.ohj2.jseppane.kirjasto</groupId>
   <artifactId>Kirjasto</artifactId>
-  <version>0.4</version>
+  <version>0.5</version>
   <name>Kirjasto</name>
   <description>A JavaFX archetype for a non-modular FXML project.</description>
   <url>https://github.com/user/javafx-fxml-template</url>

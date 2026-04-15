@@ -160,6 +160,23 @@ public class Kirja {
         this.lainausHistoria = lainausHistoria;
     }
 
+    /**
+     * Asettaa uuden nimen kirjalle
+     * @param nimi Uusi nimi kirjalle
+     */
+    public void setNimi(String nimi) {
+
+        this.nimi = nimi;
+    }
+
+    /**
+     * Asettaa uuden tekijän kirjalle
+     * @param tekija Uusi tekijä kirjalle
+     */
+    public void setTekija(String tekija) {
+
+        this.tekija = tekija;
+    }
 
     /// Tarkistajat. Metodit, jotka tarkistaa olion ominaisuuksia
 
@@ -182,7 +199,6 @@ public class Kirja {
     @Override
     public String toString() {
 
-        return nimi + " - " + tekija + " | ISBN: " + isbn
-                + (lainassa ? " (LAINASSA: " + nykyinenLainaaja + ")" : " (VAPAA)");
+        return nimi + " - " + tekija + " | ISBN: " + isbn + (lainassa ? " (LAINASSA: " + nykyinenLainaaja + ")" : " (VAPAA)");
     }
 }

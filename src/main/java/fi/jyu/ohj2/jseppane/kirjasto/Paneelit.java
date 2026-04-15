@@ -69,6 +69,23 @@ public class Paneelit {
 
 
     /**
+     * Ponnahdusikkuna, joka ilmestyy jonkin virheilmoituksen yhteydessä
+     * @param otsikko  ikkunan otsikko
+     * @param viesti ikkunan varoitusteksti
+     */
+    public static void naytaVaroitus(String otsikko, String viesti) {
+
+        javafx.scene.control.Alert alert = new javafx.scene.control.Alert(javafx.scene.control.Alert.AlertType.WARNING);
+
+        alert.setTitle(otsikko);
+        alert.setHeaderText(null);
+        alert.setContentText(viesti);
+
+        alert.showAndWait();
+    }
+
+
+    /**
      * Asettaa valitun kirjan, jota käytetään seuraavassa näkymässä.
      * Mahdollistaa näkymien välistä kommunikointia.
      *
