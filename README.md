@@ -112,3 +112,17 @@ Uuden kirjan lisääminen järjestelmään.
 - Peruuta-näppäin, jolla käyttäjä voi siirtyä takaisin päänäkymään
 
 ---
+
+## Toiminnallisuus 7 - Tietojen muokkaaminen
+![](/kuvat/uusiTieto.png)
+
+Olemassa olevan kirjan muokkaaminen.
+
+**Toiminnot:**
+- Käyttäjä voi muokata kirjan tietoja syöttämällä ainakin seuraavista:
+    - kirjan nimi
+    - tekijä
+    - ISBN (vaatimus: 13 numeroa pitkä)
+- Muokkaukset tallennetaan tallenna-painikkeella
+
+---
